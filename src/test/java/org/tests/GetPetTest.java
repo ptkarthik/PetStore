@@ -9,6 +9,7 @@ public class GetPetTest {
 
     @Test
     public void testPetId() {
-        RestAssured.given().baseUri("https://petstore.swagger.io/v2").when().get("/pet/112233").then().log().all();
+        RestAssured.given().baseUri("https://petstore.swagger.io/v2").
+                when().get("/pet/112233").then().log().all();
     }
 }
